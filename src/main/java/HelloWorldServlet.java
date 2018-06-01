@@ -9,7 +9,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
+@WebServlet(name = "HelloWorldServlet", urlPatterns = "")
 public class HelloWorldServlet extends HttpServlet {
 
     private String message;
