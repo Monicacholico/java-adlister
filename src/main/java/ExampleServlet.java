@@ -15,3 +15,27 @@
 //    }
 //
 //}
+
+
+// RESTFULL patern
+
+
+//ShowMovieServlet
+// GET /movies -> get all movies -> doGet
+
+// GET /movies -> show the movies w/ the id of 1
+// POST /movies -> save a new movie
+// GET / movies/create -> loaded the page w/ the form to add a new movie...
+// POST /movies/1/edit -> update the movie info for movie #1 w/ the info from the edit form.
+
+// GET / movies/ 1/ edit -> load the info for movie #1 into a form.
+
+
+//Movies Edit form loaded by the doGet on EditMovieServlet
+// <form method = "POST" action = "/movies/${movie.id}/edit">
+// <input type ="text" name = "title" value ="${movie.title}">
+// <input type ="text name = "review" value = "${movie.rating}">
+// <button type = "submit">Save new movie</button>
+
+
+

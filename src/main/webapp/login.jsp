@@ -13,15 +13,6 @@
         <title>Login Form</title>
     </head>
     <body>
-    <%--<%--%>
-        <%--String user = request.getParameter("admin");--%>
-        <%--String pass = request.getParameter("password");--%>
-        <%--if(user.equals("admin") && pass.equals("password"))--%>
-        <%--{--%>
-            <%--response.sendRedirect("profile.jsp");--%>
-        <%--}--%>
-    <%--%>--%>
-    <%--<%--%>
         <div style="text-align: center; border: 1px solid #000000">
         <h1>Log in Form</h1>
         <form action="login.jsp" method="POST">
