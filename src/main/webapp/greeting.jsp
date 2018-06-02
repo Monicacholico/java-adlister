@@ -1,16 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 
-
-<%--<%--%>
-
-        <%--if("POST".equals(request.getMethod())){--%>
-            <%--String name = request.getParameter("name");--%>
-
-            <%--request.getRequestDispatcher("/username.jsp").forward(request, response);--%>
-    <%--}--%>
-
-<%--%>--%>
-
 <html>
 <head>
 
