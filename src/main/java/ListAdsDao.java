@@ -40,3 +40,4 @@ public class ListAdsDao implements Ads {
         return ads;
     }
 }
+
