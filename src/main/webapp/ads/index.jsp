@@ -13,9 +13,13 @@
     <h1>Here Are all the ads!</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="row bg-dark text-primary">
+        <div class="col-md-6 bg-primary">
             <h2>${ad.title}</h2>
+        </div>
+        <div class="col-md-6 bg-light">
             <p>${ad.description}</p>
+        </div>
         </div>
     </c:forEach>
 </div>

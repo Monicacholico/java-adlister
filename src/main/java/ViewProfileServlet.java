@@ -8,6 +8,18 @@ import java.io.IOException;
 @WebServlet(name = "ViewProfileServlet", urlPatterns = "/profile")
 public class ViewProfileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //check if the users logged in, if not redirect to the login page
+        //if not logged in, then the "user" key's value will be nothing
+
+
+        if(request.getSession().getAttribute("user")== null){
+            response.sendRedirect("/login");
+            return;
+        }
+
         request.getRequestDispatcher("/profile.jsp").forward(request, response);
+
+
     }
+
 }
