@@ -18,8 +18,7 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
-
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
 
 
     }
@@ -27,6 +26,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        String message = request.getParameter( " You're not entering the right username y/0 password");
         boolean validAttempt = username.equals("admin") && password.equals("password");
 
         if (validAttempt) {
