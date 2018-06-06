@@ -4,10 +4,9 @@ INSERT INTO users (username, email, password) VALUES ('Miriam', 'miriam@email.co
   ('Kelly', 'kelly@email.com', 'kellyfirst'), ('arthur', 'arthur@email.com', 'arthurking');
 
 
-USE adlister_db;
-INSERT INTO ads (title, description) VALUES
-  ('For sale', 'Selling an Opel, 2003 originally made in Belgium'),
-  ('For lease', 'Studio on RiverWalk, Downtown San Antonio'),
-  ('Help wanted', 'Looking for math tutoring for college freshman student'),
-  ('Tickets for sale', 'ColdPlay tickets for sale for Concert in Austin'),
-  ('Dog founded', 'Nice labradoodle founded two blocks away from Phill Hardberger Park');
+INSERT INTO ads (user_id, title,description) VALUES
+  (2,'For sale', 'Selling an Opel, 2003 originally made in Belgium'),
+  (2,'For lease', 'Studio on RiverWalk, Downtown San Antonio'),
+  (2,'Help wanted', 'Looking for math tutoring for college freshman student'),
+  (2,'Tickets for sale', 'ColdPlay tickets for sale for Concert in Austin'),
+  (2,'Dog founded', 'Nice labradoodle founded two blocks away from Phill Hardberger Park');

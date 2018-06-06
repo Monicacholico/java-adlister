@@ -1,5 +1,8 @@
 USE adlister_db;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS ads;
+
+
 CREATE TABLE users(
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   username VARCHAR(100),
@@ -9,12 +12,13 @@ CREATE TABLE users(
   UNIQUE (email)
 );
 
-USE adlister_db;
-DROP TABLE IF EXISTS ads;
+
 CREATE TABLE ads(
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  title VARCHAR(50),
-  description VARCHAR(200),
+  user_id INT UNSIGNED NOT NULL,
+  title VARCHAR(50) NOT NULL,
+  description VARCHAR(200) NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (user_id) REFERENCES users (id)
+  ON DELETE CASCADE
 );
