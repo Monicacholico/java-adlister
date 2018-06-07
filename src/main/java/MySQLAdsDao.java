@@ -43,7 +43,7 @@ public class MySQLAdsDao implements Ads {
 //            ));
 //            System.out.println(rs.getString("title"));
 //
-//            return createAdsFromResults(rs);
+//            return createAds(rs);
 //        }
         return createAds(rs);
     }
